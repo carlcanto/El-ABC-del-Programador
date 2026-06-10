@@ -1,0 +1,418 @@
+OBJETIVO
+
+Construir una presentación web profesional para una charla-taller universitaria titulada:
+
+EL ABC DEL PROGRAMADOR:
+Git, GitHub, Docker y Linux para la Subsistencia Profesional
+
+La presentación será utilizada en un auditorio mediante proyector.
+
+Debe sentirse como una mezcla entre:
+
+TED Talk
+Apple Keynote
+GitHub Universe
+
+NO debe parecer una presentación PowerPoint tradicional.
+
+TECNOLOGÍAS
+
+Utilizar únicamente:
+
+HTML5
+CSS3
+JavaScript Vanilla
+
+NO utilizar:
+
+React
+Vue
+Angular
+Tailwind
+Bootstrap
+Reveal.js
+ESTRUCTURA
+
+Generar:
+
+/
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── app.js
+│
+├── assets/
+│   ├── logos/
+│   ├── images/
+│   └── icons/
+│
+└── README.md
+NAVEGACIÓN
+
+Cada slide debe ocupar exactamente:
+
+height: 100vh;
+
+Implementar:
+
+scroll wheel
+teclado (↑ ↓ ← →)
+navegación lateral fija
+anclas
+indicador de progreso
+
+La transición entre slides debe ser suave.
+
+Duración:
+
+300ms a 500ms.
+
+MODO PRESENTADOR
+
+Al presionar:
+
+P
+
+Abrir una ventana secundaria.
+
+Debe mostrar:
+
+slide actual
+siguiente slide
+cronómetro
+notas privadas
+
+Las notas NO deben mostrarse en la pantalla principal.
+
+DISEÑO GLOBAL
+
+Fondo principal:
+
+#FFFFFF
+
+Fondo secundario:
+
+#F8FAFC
+
+Texto:
+
+#1E293B
+
+Colores:
+
+Git:
+
+#F97316
+
+Docker:
+
+#2496ED
+
+Linux:
+
+#FCC624
+
+Éxito:
+
+#10B981
+TIPOGRAFÍA
+
+Títulos:
+
+Montserrat Bold
+
+Contenido:
+
+Inter
+
+Nunca usar menos de:
+
+20px
+
+Los títulos deben verse claramente desde la última fila del salón.
+
+FILOSOFÍA
+
+Cada slide responde una única pregunta.
+
+Mucho espacio en blanco.
+
+Visuales grandes.
+
+Poco texto.
+
+Máximo 6 bullets por slide.
+
+No usar párrafos largos.
+
+ASSETS
+
+Utilizar:
+
+assets/logos/git.svg
+assets/logos/github.svg
+assets/logos/docker.svg
+assets/logos/linux.svg
+
+assets/images/linus-torvalds.jpg
+assets/images/shipping-container.jpg
+
+assets/icons/laptop.svg
+assets/icons/server.svg
+assets/icons/cloud.svg
+assets/icons/user.svg
+assets/icons/git-branch.svg
+assets/icons/camera.svg
+assets/icons/history.svg
+assets/icons/folder.svg
+assets/icons/terminal.svg
+assets/icons/container.svg
+assets/icons/ship.svg
+assets/icons/check.svg
+assets/icons/warning.svg
+assets/icons/pull-request.svg
+CONTENIDO
+
+Implementar exactamente las siguientes secciones:
+
+01 Portada
+
+Flujo visual:
+
+Programador → Git → GitHub → Docker → Linux → Servidor
+
+Logos oficiales.
+
+02 ¿Por qué estamos aquí?
+
+Universidad → Industria
+
+03 De Estudiante a Profesional
+
+Comparativa visual.
+
+04 Linus Torvalds
+
+Fotografía real.
+
+Timeline:
+
+1991 Linux
+
+2005 Git
+
+05 Linux: El Sistema Operativo que Domina Internet
+
+Linux al centro.
+
+Servicios alrededor.
+
+Mantenerlo simple y visual.
+
+06 Project_Final_v3_REAL_FinalAhoraSi.c
+
+Representación del caos de versiones.
+
+Archivos dispersos.
+
+07 Git: La Máquina del Tiempo
+
+Usar analogía de fotografías.
+
+Timeline interactiva.
+
+Animada.
+
+Commits:
+
+📸 Inicial
+
+📸 Login
+
+📸 Dashboard
+
+📸 Corrección
+
+08 Las Ramas
+
+Visualizar ramas como líneas temporales alternativas.
+
+09 GitHub
+
+Colaboración entre desarrolladores.
+
+10 Pull Request
+
+feature-login → PR → revisión → main
+
+11 Demo Git
+
+Mostrar flujo:
+
+git init
+
+git add
+
+git commit
+
+git push
+
+12 Funciona en mi Máquina
+
+Tres equipos.
+
+Uno funciona.
+
+Otro falla.
+
+Otro falla en producción.
+
+13 ¿Qué Tiene Que Ver Linux con Docker?
+
+Capas:
+
+Aplicación
+
+Docker
+
+Kernel Linux
+
+Hardware
+
+14 Docker
+
+Analogía del contenedor marítimo.
+
+Usar shipping-container.jpg
+
+15 Imagen vs Contenedor
+
+Receta vs pastel.
+
+Imagen vs ejecución.
+
+16 Dockerfile
+
+Mostrar:
+
+FROM
+
+WORKDIR
+
+COPY
+
+CMD
+
+Explicación visual.
+
+17 Demo Docker
+
+docker build
+
+docker run
+
+docker logs
+
+18 ¿Cómo Encaja Todo?
+
+Programador
+
+↓
+
+Git
+
+↓
+
+GitHub
+
+↓
+
+Docker
+
+↓
+
+Servidor
+
+↓
+
+Usuario
+
+Debe ser la diapositiva visualmente más impactante.
+
+19 Taller Práctico
+
+Crear subsecciones navegables:
+
+Git
+
+GitHub
+
+Docker
+
+Mostrar exactamente los comandos del taller.
+
+Los comandos deben mostrarse en bloques grandes, legibles y con botón de copiar.
+
+SECCIÓN GIT
+
+Mostrar:
+
+git init
+git status
+git status -s
+git add .
+git commit -m "feat: hola mundo inicial"
+git log --oneline
+git branch
+git checkout -b feature-login
+git push -u origin feature-login
+git fetch
+git pull
+git revert HEAD
+
+SECCIÓN GITHUB
+
+Mostrar:
+
+git remote add origin URL_DEL_REPOSITORIO
+git remote -v
+git push -u origin main
+git clone URL_DEL_REPOSITORIO
+
+SECCIÓN DOCKER
+
+Mostrar:
+
+docker build -t hola-python .
+docker images
+docker run --name hola-contenedor hola-python
+docker ps -a
+docker logs hola-contenedor
+docker rm hola-contenedor
+
+20 Preguntas y Contacto
+
+Mostrar:
+
+Carlos Canto
+
+Correo
+
+GitHub
+
+Instagram
+
+Diseño limpio.
+
+ANIMACIONES
+
+Permitir únicamente:
+
+fade-in
+slide-up
+zoom-in
+
+Nada exagerado.
+
+Todo debe sentirse profesional, moderno y académico.
