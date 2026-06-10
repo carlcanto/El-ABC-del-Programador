@@ -14,7 +14,7 @@ Greenfield single-page presentation. `presentacion abc del programador.txt` is t
 - **Presenter mode**: Press `P` → `window.open('index.html?presenter')`. Communication via `BroadcastChannel('abc-presentacion')`. Presenter window shows current slide preview, next slide preview, timer, and `data-notes` from active slide. Notes are hidden from main view.
 - **Slide 11 typewriter**: Commands typed character-by-character (30–50ms interval) when slide activates. Uses `MutationObserver`.
 - **Slide 19 workshop**: Three tabs (Git/GitHub/Docker) with copy buttons using `navigator.clipboard`. Command blocks in dark `#0F172A` terminal style.
-- **All SVG assets** are inline or local files in `assets/` (logos, images, icons). No external image dependencies. Linus Torvalds portrait and shipping container are SVG illustrations.
+- **Assets** are external files in `assets/`. Brand logos are loaded via `<img src="assets/logos/*.svg">`, photos via `<img src="assets/images/*.jpg">`. User must download and place these files. Generic UI icons remain inline SVG. No external CDN dependencies.
 - **No build step, no server needed**. Open `index.html` directly in any browser.
 - **Touch support**: passive listeners on `touchstart`/`touchend` for swipe navigation.
 - **No git repo, no `.gitignore`, no `vault/`** initialized. This repo is a spec-turned-implementation.
