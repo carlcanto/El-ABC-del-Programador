@@ -6,6 +6,8 @@
   let current = 0;
   let transitioning = false;
   let presenterWindow = null;
+  let subStep = 0;
+  let subStepMax = 0;
 
   const channel = new BroadcastChannel('abc-presentacion');
 
@@ -152,23 +154,61 @@
     // Remove active from all
     slides.forEach(function (s) { s.classList.remove('active'); });
 
-    // Re-trigger animations by removing and re-adding
-    // Actually, just add active to new slide
     current = index;
     slides[current].classList.add('active');
 
-    updateUI();
+    // Reset sub-step
+    subStep = 0;
+    subStepMax = slides[current].querySelectorAll('.commit-step').length;
 
+    updateUI();
     broadcastState();
+    triggerSlideAnimations();
 
     setTimeout(function () { transitioning = false; }, 400);
   }
 
   function next() {
+    // Sub-step navigation for slide 07
+    var commits = slides[current].querySelectorAll('.commit-step');
+    if (commits.length > 0 && subStep < commits.length - 1) {
+      subStep++;
+      commits.forEach(function (c, i) {
+        c.classList.remove('active');
+        if (i <= subStep) c.classList.add('active');
+      });
+      var indicator = slides[current].querySelector('.sub-step-indicator');
+      if (indicator) {
+        if (subStep < commits.length - 1) {
+          indicator.textContent = (subStep + 1) + ' / ' + commits.length;
+          indicator.style.opacity = '1';
+        } else {
+          indicator.style.opacity = '0';
+        }
+      }
+      updateUI();
+      return;
+    }
     if (current < totalSlides - 1) goTo(current + 1);
   }
 
   function prev() {
+    // Sub-step back for slide 07
+    var commits = slides[current].querySelectorAll('.commit-step');
+    if (commits.length > 0 && subStep > 0) {
+      subStep--;
+      commits.forEach(function (c, i) {
+        c.classList.remove('active');
+        if (i <= subStep) c.classList.add('active');
+      });
+      var indicator = slides[current].querySelector('.sub-step-indicator');
+      if (indicator) {
+        indicator.textContent = (subStep + 1) + ' / ' + commits.length;
+        indicator.style.opacity = '1';
+      }
+      updateUI();
+      return;
+    }
     if (current > 0) goTo(current - 1);
   }
 
@@ -486,6 +526,79 @@
     });
   }
 
+  // ===== SLIDE-SPECIFIC ANIMATIONS =====
+  function triggerSlideAnimations() {
+    animateChaosSlide6();
+    animateBranchSlide8();
+    animateGlitchSlide12();
+    animateKineticSlide18();
+  }
+
+  // Slide 06 — Chaos files appear staggered
+  function animateChaosSlide6() {
+    var slide = document.getElementById('slide-06');
+    if (!slide || !slide.classList.contains('active')) return;
+    var files = slide.querySelectorAll('.chaos-file');
+    files.forEach(function (f, i) {
+      f.style.opacity = '0';
+      f.style.transform = 'scale(0.8) rotate(' + (Math.random() * 10 - 5) + 'deg)';
+      setTimeout(function () {
+        f.style.opacity = '1';
+        f.style.transform = 'scale(1) rotate(' + (Math.random() * 6 - 3) + 'deg)';
+        f.style.transition = 'all 0.5s cubic-bezier(0.22,1,0.36,1)';
+      }, 200 + i * 150);
+    });
+  }
+
+  // Slide 08 — Branch dots animate sequentially
+  function animateBranchSlide8() {
+    var slide = document.getElementById('slide-08');
+    if (!slide || !slide.classList.contains('active')) return;
+    var dots = slide.querySelectorAll('.branch-dot');
+    dots.forEach(function (dot, i) {
+      dot.style.opacity = '0';
+      dot.style.transform = 'scale(0)';
+      setTimeout(function () {
+        dot.style.opacity = '1';
+        dot.style.transform = 'scale(1)';
+        dot.style.transition = 'all 0.4s cubic-bezier(0.22,1,0.36,1)';
+      }, 200 + i * 120);
+    });
+    var connectors = slide.querySelectorAll('.branch-connector');
+    connectors.forEach(function (conn, i) {
+      conn.style.transform = 'scaleY(0)';
+      conn.style.transformOrigin = 'top';
+      setTimeout(function () {
+        conn.style.transform = 'scaleY(1)';
+        conn.style.transition = 'transform 0.3s cubic-bezier(0.22,1,0.36,1)';
+      }, 300 + i * 100);
+    });
+  }
+
+  // Slide 12 — Glitch on failing env cards
+  function animateGlitchSlide12() {
+    var slide = document.getElementById('slide-12');
+    if (!slide || !slide.classList.contains('active')) return;
+    var screens = slide.querySelectorAll('.env-card.warn, .env-card.error');
+    screens.forEach(function (s) { s.classList.add('screen-glitch'); });
+  }
+
+  // Slide 18 — Kinetic flow items stagger
+  function animateKineticSlide18() {
+    var slide = document.getElementById('slide-18');
+    if (!slide || !slide.classList.contains('active')) return;
+    var items = slide.querySelectorAll('.flow-item');
+    items.forEach(function (item, i) {
+      item.style.opacity = '0';
+      item.style.transform = 'translateY(20px)';
+      setTimeout(function () {
+        item.style.opacity = '1';
+        item.style.transform = 'translateY(0)';
+        item.style.transition = 'all 0.5s cubic-bezier(0.22,1,0.36,1)';
+      }, 300 + i * 200);
+    });
+  }
+
   // ===== INIT =====
   function init() {
     // Activate first slide
@@ -508,10 +621,9 @@
     }
 
     updateUI();
+    triggerSlideAnimations();
 
-    // Remove initial opacity from HTML (entry animations handle it)
     setTimeout(function () {
-      // Ensure first slide's content is visible
       updateUI();
     }, 100);
 
@@ -523,6 +635,17 @@
           dots[i].remove();
         }
       }
+    }
+  }
+
+  // Show first commit-step on load if present
+  var firstCommits = slides[0].querySelectorAll('.commit-step');
+  if (firstCommits.length > 0) {
+    firstCommits[0].classList.add('active');
+    var indicator = slides[0].querySelector('.sub-step-indicator');
+    if (indicator) {
+      indicator.textContent = '1 / ' + firstCommits.length;
+      indicator.style.opacity = '1';
     }
   }
 

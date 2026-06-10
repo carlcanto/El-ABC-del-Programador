@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>El ABC del Programador</title>
 <link rel="stylesheet" href="css/styles.css">
+
 </head>
 <body>
 
@@ -41,7 +42,8 @@
     <span class="slide-number d1">01</span>
     <div class="accent-line git-line entry-up"></div>
     <h1 class="title-main entry-up">El ABC del<br>Programador</h1>
-    <p class="title-sub entry-up d2">Git, GitHub, Docker y Linux para la Subsistencia Profesional</p>
+    <p class="title-sub entry-up d2">La Base del Desarrollo de Software Moderno</p>
+    <div style="font-size:0.75rem;color:var(--text-muted);letter-spacing:0.05em;margin-bottom:16px;" class="entry-up d1">19 de Noviembre de 2025</div>
     <div class="flow-row entry-up d3">
       <span>Programador</span>
       <span class="arrow">→</span>
@@ -73,6 +75,10 @@
         <span>Linux</span>
       </div>
     </div>
+    <div class="entry-up d5" style="margin-top:60px;font-size:0.75rem;color:var(--text-muted);">
+      <strong>Presentado por: Carlos Canto</strong><br>
+      Facultad de Informática, Electrónica y Comunicación (Fiec)
+    </div>
   </div>
 </section>
 
@@ -80,30 +86,39 @@
 <section class="slide" id="slide-02" data-notes="Hay una brecha entre lo que se aprende en la universidad y lo que realmente se necesita en la industria. Esta charla busca cerrar ese espacio." data-title="¿Por qué estamos aquí?">
   <div class="slide-inner">
     <span class="slide-number d1">02</span>
-    <span class="slide-label entry-up d1">El Problema</span>
+    <span class="slide-label entry-up d1">El Propósito</span>
     <h2 class="entry-up d2">¿Por qué estamos aquí?</h2>
-    <p class="text-muted mt-16 entry-up d3" style="max-width:600px;font-size:0.9rem;">Lo que separa la academia de la industria no es solo conocimiento técnico, sino herramientas y flujo de trabajo.</p>
-    <div class="gap-visual">
-      <div class="gap-column university entry-up d3">
-        <h3>Universidad</h3>
-        <ul>
-          <li>Tareas individuales</li>
-          <li>Sin control de versiones</li>
-          <li>Entrega en USB o PDF</li>
-          <li>Un solo entorno de desarrollo</li>
-          <li>"En mi máquina funciona"</li>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:32px;">
+      <div class="entry-up d3">
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:12px;">Objetivo General</h3>
+        <p style="font-size:0.85rem;color:var(--text-muted);line-height:1.6;">Destacar la importancia y aplicación de herramientas de desarrollo de software dentro del contexto académico y la formación de los estudiantes de la Fiec.</p>
+      </div>
+      <div class="entry-up d4">
+        <h3 style="font-size:1rem;font-weight:700;margin-bottom:12px;">Objetivos Específicos</h3>
+        <ul style="font-size:0.85rem;color:var(--text-muted);line-height:1.7;list-style:none;padding:0;">
+          <li style="padding:6px 0;border-bottom:1px solid #E2E8F0;">• Explicar cómo Git, GitHub y Docker permiten resolver problemas reales de desarrollo —como el control de versiones, la colaboración y la portabilidad— para evidenciar su relevancia en la práctica profesional.</li>
+          <li style="padding:6px 0;">• Demostrar mediante ejemplos, que estas herramientas son indispensables para cumplir con los estándares actuales de la industria y garantizar una transición efectiva desde el entorno académico hacia el laboral.</li>
         </ul>
       </div>
-      <div class="gap-divider entry-up d4">→</div>
-      <div class="gap-column industry entry-up d4">
-        <h3>Industria</h3>
-        <ul>
-          <li>Equipos distribuidos</li>
-          <li>Git y GitHub obligatorios</li>
-          <li>CI/CD y despliegue automatizado</li>
-          <li>Contenedores y entornos reproducibles</li>
-          <li>Servidores Linux en producción</li>
-        </ul>
+    </div>
+    <div class="entry-up d5" style="display:flex;gap:24px;margin-top:32px;justify-content:center;">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(16,185,129,0.1);display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2v-5"/></svg>
+        </div>
+        <span style="font-size:0.65rem;color:var(--text-light);">Academia</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(249,115,22,0.1);display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+        </div>
+        <span style="font-size:0.65rem;color:var(--text-light);">Profesional</span>
+      </div>
+      <div style="display:flex;flex-direction:column;align-items:center;gap:6px;">
+        <div style="width:48px;height:48px;border-radius:50%;background:rgba(30,41,59,0.08);display:flex;align-items:center;justify-content:center;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <span style="font-size:0.65rem;color:var(--text-light);">Industria</span>
       </div>
     </div>
   </div>
@@ -120,13 +135,13 @@
         <div class="icon-wrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M2 20h20"/><path d="M9 20h6" opacity=".6"/></svg>
         </div>
-        <h3>Estudiante</h3>
-        <p class="subtitle">Código que solo tú ves</p>
+        <h3>Desarrollo Académico</h3>
+        <p class="subtitle">El enfoque universitario</p>
         <ul>
-          <li>Archivos sueltos</li>
-          <li>Sin respaldo</li>
-          <li>Sin colaboración</li>
-          <li>Entorno frágil</li>
+          <li>Principal objetivo: lograr que el código funcione</li>
+          <li>Pocas preocupaciones por mantenibilidad</li>
+          <li>Colaboración limitada a grupos pequeños</li>
+          <li>Entornos de prueba simples</li>
         </ul>
       </div>
       <div class="comp-arrow entry-up d4">→</div>
@@ -134,15 +149,19 @@
         <div class="icon-wrap">
           <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
         </div>
-        <h3>Profesional</h3>
-        <p class="subtitle">Código que el mundo ejecuta</p>
+        <h3>Desarrollo Industrial</h3>
+        <p class="subtitle">El enfoque profesional</p>
         <ul>
-          <li>Control de versiones</li>
-          <li>Backups automáticos</li>
-          <li>Colaboración en equipo</li>
-          <li>Entornos reproducibles</li>
+          <li>Código debe ser mantenible a largo plazo</li>
+          <li>Permitir colaboración eficiente entre equipos</li>
+          <li>Ser fácil de desplegar en diferentes entornos</li>
+          <li>Requisitos de calidad (seguridad, rendimiento)</li>
         </ul>
       </div>
+    </div>
+    <div class="entry-up d5" style="display:flex;align-items:flex-start;gap:10px;padding:14px 18px;border-radius:10px;font-size:0.8rem;line-height:1.5;background:#FEF2F2;border:1px solid #FECACA;border-left:4px solid #EF4444;color:#991B1B;margin-top:32px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#EF4444" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;margin-top:2px;"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <strong>Realidad:</strong> Llegar a una entrevista de trabajo sin saber Git y Docker no es una opción, es un suicidio profesional.
     </div>
   </div>
 </section>
@@ -204,16 +223,13 @@
     <span class="slide-label entry-up d1">El Problema</span>
     <h2 class="entry-up d2">Project_Final_v3_REAL_<br>FinalAhoraSi.c</h2>
     <p class="text-muted mt-16 entry-up d3" style="font-size:0.9rem;">Sin Git, tu carpeta de proyectos se ve así:</p>
-    <div class="chaos-grid">
-      <span class="file entry-zoom d2">proyecto.c</span>
-      <span class="file entry-zoom d3">proyecto_final.c</span>
-      <span class="file entry-zoom d4">proyecto_v2.c</span>
-      <span class="file entry-zoom d3">proyecto_FINAL.c</span>
-      <span class="file entry-zoom d4">proyecto_v3_REAL.c</span>
-      <span class="file entry-zoom d5">copia_seguridad.c</span>
-      <span class="file entry-zoom d4">proyecto_FINAL2.c</span>
-      <span class="file entry-zoom d5">BACKUP_proyecto.c</span>
-      <span class="file entry-zoom d6">proyecto_FINAL_ahora_si.c</span>
+    <div class="chaos-area">
+      <span class="chaos-file" style="top:10%;left:5%;transform:rotate(-4deg);">Project_v1.c</span>
+      <span class="chaos-file" style="top:5%;left:45%;transform:rotate(6deg);">Project_final.c</span>
+      <span class="chaos-file" style="top:30%;right:5%;transform:rotate(-8deg);">Project_v2_real.c</span>
+      <span class="chaos-file" style="top:50%;left:10%;transform:rotate(3deg);">Project_v3.c</span>
+      <span class="chaos-file" style="top:55%;left:55%;transform:rotate(-5deg);">final_final.c</span>
+      <span class="chaos-file" style="top:70%;left:20%;transform:rotate(7deg);">Project_v2l.c</span>
     </div>
   </div>
 </section>
@@ -225,8 +241,52 @@
     <span class="slide-label entry-up d1">Control de Versiones</span>
     <h2 class="entry-up d2">Git: La Máquina del Tiempo</h2>
     <p class="text-muted mt-16 entry-up d3" style="font-size:0.9rem;">Cada commit es una fotografía de tu código. Puedes viajar al pasado.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-bottom:24px;" class="entry-up d3">
+      <div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v7"/><path d="M6 8.5C6 12 8.5 14 12 14s6 1 6 3.5"/></svg>
+          <div><strong style="font-size:0.85rem;">¿Qué es Git?</strong><br><span style="font-size:0.78rem;color:var(--text-muted);line-height:1.5;">Git es un sistema de control de versiones distribuido que permite a cada desarrollador mantener una copia completa del historial del proyecto en su máquina local, facilitando el trabajo autónomo y sin dependencia de conexión constante.</span></div>
+        </div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M21 9H3"/><path d="M21 15H3"/></svg>
+          <div><strong style="font-size:0.85rem;">Commit</strong><br><span style="font-size:0.78rem;color:var(--text-muted);line-height:1.5;">Una instantánea de un estado funcional del código. Cada commit debe ir acompañado de un mensaje claro que explique el 'por qué' de los cambios, no solo el 'qué'.</span></div>
+        </div>
+        <div class="gitignore-box" style="padding:12px 16px;background:rgba(16,185,129,0.06);border-left:3px solid #10B981;border-radius:0 8px 8px 0;">
+          <h4 style="font-size:0.8rem;font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:6px;font-family:var(--font-display);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v7"/><path d="M6 8.5C6 12 8.5 14 12 14s6 1 6 3.5"/></svg>
+            .gitignore
+          </h4>
+          <span style="font-size:0.75rem;color:var(--text-muted);">Un archivo donde le dices a Git qué NO debe guardar:</span>
+          <ul style="font-size:0.72rem;color:var(--text-muted);line-height:1.7;list-style:none;padding:0;margin-top:4px;">
+            <li style="padding:2px 0;">✓ Carpetas temporales</li>
+            <li style="padding:2px 0;">✓ Archivos enormes</li>
+            <li style="padding:2px 0;">✓ Contraseñas</li>
+            <li style="padding:2px 0;">✓ Dependencias que se pueden reinstalar</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <div style="display:flex;align-items:flex-start;gap:10px;margin-bottom:16px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;margin-top:2px;"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v7"/><path d="M6 8.5C6 12 8.5 14 12 14s6 1 6 3.5"/></svg>
+          <div><strong style="font-size:0.85rem;">Branch (Rama)</strong><br><span style="font-size:0.78rem;color:var(--text-muted);line-height:1.5;">Permite crear caminos de desarrollo paralelos. Las ramas son ideales para trabajar en nuevas funcionalidades o corregir errores de forma aislada, sin afectar la versión principal del proyecto.</span></div>
+        </div>
+        <div class="concept-box" style="padding:14px 16px;border:1px solid #E2E8F0;border-radius:8px;background:var(--bg);">
+          <h4 style="font-size:0.8rem;font-weight:700;margin-bottom:8px;display:flex;align-items:center;gap:6px;font-family:var(--font-display);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M9 18l6-6-6-6"/></svg>
+            Conceptos Clave
+          </h4>
+          <ul style="list-style:none;padding:0;font-size:0.75rem;color:var(--text-muted);line-height:1.7;">
+            <li style="padding:3px 0;">● Git es la "máquina del tiempo" para tu código</li>
+            <li style="padding:3px 0;">● Cada commit es un punto en el tiempo que puedes visitar</li>
+            <li style="padding:3px 0;">● Las ramas son bifurcaciones que permiten experimentar sin riesgo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
     <div class="photo-timeline">
-      <div class="photo-card entry-zoom d3">
+      <div class="photo-card commit-step active entry-zoom d3" data-step="1">
         <div class="photo-placeholder">
           <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         </div>
@@ -234,7 +294,7 @@
         <div class="commit-hash">a1b2c3d</div>
         <div class="commit-line"></div>
       </div>
-      <div class="photo-card entry-zoom d4">
+      <div class="photo-card commit-step entry-zoom d4" data-step="2">
         <div class="photo-placeholder">
           <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         </div>
@@ -242,7 +302,7 @@
         <div class="commit-hash">e4f5g6h</div>
         <div class="commit-line"></div>
       </div>
-      <div class="photo-card entry-zoom d5">
+      <div class="photo-card commit-step entry-zoom d5" data-step="3">
         <div class="photo-placeholder">
           <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         </div>
@@ -250,7 +310,7 @@
         <div class="commit-hash">i7j8k9l</div>
         <div class="commit-line"></div>
       </div>
-      <div class="photo-card entry-zoom d6">
+      <div class="photo-card commit-step entry-zoom d6" data-step="4">
         <div class="photo-placeholder">
           <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         </div>
@@ -258,6 +318,7 @@
         <div class="commit-hash">m0n1o2p</div>
       </div>
     </div>
+    <div class="sub-step-indicator" style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);font-size:0.65rem;color:var(--text-light);letter-spacing:0.1em;pointer-events:none;opacity:0;"></div>
   </div>
 </section>
 
@@ -277,7 +338,7 @@
         <div class="branch-dot"></div>
         <div class="branch-connector"></div>
         <div class="branch-dot"></div>
-        <div class="branch-label">main</div>
+        <div class="branch-label" data-explanation="main — Rama principal del proyecto">main</div>
       </div>
       <div class="branch-col feature-line">
         <div class="branch-dot"></div>
@@ -285,7 +346,7 @@
         <div class="branch-dot"></div>
         <div class="branch-connector"></div>
         <div class="branch-dot"></div>
-        <div class="branch-label">feature-login</div>
+        <div class="branch-label" data-explanation="feature-login — Nace de main, trabajo aislado, luego merge">feature-login</div>
       </div>
       <div class="branch-col feature-line-2">
         <div class="branch-dot"></div>
@@ -293,7 +354,7 @@
         <div class="branch-dot"></div>
         <div class="branch-connector"></div>
         <div class="branch-dot"></div>
-        <div class="branch-label">feature-api</div>
+        <div class="branch-label" data-explanation="feature-api — Rama independiente, funcionalidad nueva">feature-api</div>
       </div>
     </div>
   </div>
@@ -325,6 +386,20 @@
         <span>Dev 2</span>
       </div>
     </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:32px;text-align:left;" class="entry-up d4">
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:14px 18px;border-radius:10px;background:rgba(16,185,129,0.08);border:1px solid rgba(16,185,129,0.15);">
+        <div style="width:32px;height:32px;border-radius:8px;background:rgba(16,185,129,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <div><strong style="font-size:0.8rem;color:white;">Colaboración Masiva</strong><br><span style="font-size:0.72rem;color:rgba(255,255,255,0.6);line-height:1.5;">Facilita la sincronización de código y trabajo en equipo, permitiendo que múltiples desarrolladores contribuyan al mismo proyecto.</span></div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:14px 18px;border-radius:10px;background:rgba(249,115,22,0.08);border:1px solid rgba(249,115,22,0.15);">
+        <div style="width:32px;height:32px;border-radius:8px;background:rgba(249,115,22,0.15);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <div><strong style="font-size:0.8rem;color:white;">Portfolio Profesional</strong><br><span style="font-size:0.72rem;color:rgba(255,255,255,0.6);line-height:1.5;">La actividad en GitHub sirve como currículum vivo. Las empresas revisan perfiles para evaluar habilidades de codificación.</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -334,7 +409,7 @@
     <span class="slide-number d1">10</span>
     <span class="slide-label entry-up d1">Integración</span>
     <h2 class="entry-up d2">Pull Request</h2>
-    <p class="text-muted mt-16 entry-up d3" style="font-size:0.9rem;">El puente entre el desarrollo individual y el equipo.</p>
+    <p class="text-muted mt-16 entry-up d3" style="font-size:0.9rem;">Mecanismo fundamental para revisión de código. Los desarrolladores proponen cambios, reciben feedback y pulen su trabajo antes de integración.</p>
     <div class="pr-flow">
       <span class="pr-step feature entry-up d3">feature-login</span>
       <span class="pr-arrow entry-up d4">→</span>
@@ -360,31 +435,37 @@
         <span class="dot"></span>
       </div>
       <div class="terminal-body">
-        <div class="cmd-line" data-cmd>
-          <span class="prompt">$</span>
-          <span class="cmd">git init</span>
-          <span class="cursor-blink" style="display:none;"></span>
-          <span class="output" style="display:none;"> → Initialized empty Git repository</span>
-        </div>
-        <div class="cmd-line" data-cmd>
-          <span class="prompt">$</span>
-          <span class="cmd">git add .</span>
-          <span class="cursor-blink" style="display:none;"></span>
-          <span class="output" style="display:none;"> → Files staged</span>
-        </div>
-        <div class="cmd-line" data-cmd>
-          <span class="prompt">$</span>
-          <span class="cmd">git commit -m "feat: hola mundo inicial"</span>
-          <span class="cursor-blink" style="display:none;"></span>
-          <span class="output" style="display:none;"> → [main a1b2c3d] feat: hola mundo inicial</span>
-        </div>
-        <div class="cmd-line" data-cmd>
-          <span class="prompt">$</span>
-          <span class="cmd">git push -u origin main</span>
-          <span class="cursor-blink" style="display:none;"></span>
-          <span class="output" style="display:none;"> → Published to GitHub</span>
-        </div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git init</span><span class="output" style="color:var(--text-light);"> → Initialized empty Git repository</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git add .</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git commit -m "Commit inicial"</span><span class="output" style="color:var(--text-light);"> → [main a1b2c3d] Commit inicial</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git remote add origin https://github.com/usuario/repositorio.git</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git push -u origin main</span><span class="output" style="color:var(--text-light);"> → Enumerando objetos: 3, listo.</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git pull origin main</span><span class="output" style="color:var(--text-light);"> → Already up to date</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git commit -m "fix: Error grave"</span><span class="output" style="color:var(--text-light);"> → [main d4e5f6g] fix: Error grave</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">git revert HEAD</span><span class="output" style="color:var(--text-light);"> → [main h7i8j9k] Revert "fix: Error grave"</span></div>
       </div>
+    </div>
+    <div style="display:flex;gap:16px;margin-top:20px;flex-wrap:wrap;" class="entry-up d4">
+      <div style="flex:1;min-width:120px;display:flex;align-items:center;gap:10px;padding:10px 14px;border-left:3px solid #10B981;background:rgba(16,185,129,0.05);border-radius:0 8px 8px 0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;"><circle cx="6" cy="6" r="2.5"/><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M6 8.5v7"/><path d="M6 8.5C6 12 8.5 14 12 14s6 1 6 3.5"/></svg>
+        <div><div style="font-size:0.72rem;font-weight:600;color:white;">Init & Commit</div><div style="font-size:0.62rem;color:rgba(255,255,255,0.5);">Inicializar y guardar</div></div>
+      </div>
+      <div style="flex:1;min-width:120px;display:flex;align-items:center;gap:10px;padding:10px 14px;border-left:3px solid #10B981;background:rgba(16,185,129,0.05);border-radius:0 8px 8px 0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;"><path d="M5 17H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/><polyline points="12 15 17 20 12 25"/><polyline points="17 15 12 20 17 25"/></svg>
+        <div><div style="font-size:0.72rem;font-weight:600;color:white;">Push</div><div style="font-size:0.62rem;color:rgba(255,255,255,0.5);">Subir a GitHub</div></div>
+      </div>
+      <div style="flex:1;min-width:120px;display:flex;align-items:center;gap:10px;padding:10px 14px;border-left:3px solid #10B981;background:rgba(16,185,129,0.05);border-radius:0 8px 8px 0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;"><path d="M19 17h2a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h1"/><polyline points="12 25 7 20 12 15"/><polyline points="7 25 12 20 7 15"/></svg>
+        <div><div style="font-size:0.72rem;font-weight:600;color:white;">Pull</div><div style="font-size:0.62rem;color:rgba(255,255,255,0.5);">Bajar cambios</div></div>
+      </div>
+      <div style="flex:1;min-width:120px;display:flex;align-items:center;gap:10px;padding:10px 14px;border-left:3px solid #10B981;background:rgba(16,185,129,0.05);border-radius:0 8px 8px 0;">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;"><polyline points="1 4 4 7 1 10"/><path d="M4 7H1v6a4 4 0 0 0 4 4h7"/></svg>
+        <div><div style="font-size:0.72rem;font-weight:600;color:white;">Revert</div><div style="font-size:0.62rem;color:rgba(255,255,255,0.5);">Deshacer error</div></div>
+      </div>
+    </div>
+    <div class="entry-up d5" style="display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:#FFFBEB;border:1px solid #FDE68A;border-radius:8px;font-size:0.75rem;color:#92400E;line-height:1.5;margin-top:20px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#F59E0B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;margin-top:2px;"><path d="M9 18l6-6-6-6"/></svg>
+      <strong>Pro Tip:</strong> Cada commit debe ir acompañado de un mensaje claro que explique el "por qué" de los cambios realizados.
     </div>
   </div>
 </section>
@@ -396,6 +477,53 @@
     <span class="slide-label entry-up d1">El Dolor</span>
     <h2 class="entry-up d2">Funciona en mi Máquina</h2>
     <p class="text-muted mt-16 entry-up d3" style="font-size:0.9rem;">El problema de los entornos no reproducibles.</p>
+    <div style="display:flex;gap:24px;margin-bottom:24px;" class="entry-up d3">
+      <div style="flex:1;">
+        <div style="display:flex;align-items:flex-start;gap:8px;margin-bottom:12px;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0;margin-top:2px;"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          <div>
+            <strong style="color:#10B981;font-size:0.85rem;">"¡Funciona en mi máquina!"</strong>
+            <p style="font-size:0.78rem;color:var(--text-muted);line-height:1.5;margin-top:4px;">Cuando el código que opera perfectamente en el entorno de un programador falla al trasladarse a otro entorno.</p>
+          </div>
+        </div>
+        <div style="padding:12px 16px;border-left:3px solid #EF4444;background:rgba(239,68,68,0.04);border-radius:0 8px 8px 0;margin-bottom:12px;">
+          <strong style="font-size:0.8rem;color:var(--text);">Raíz del Problema</strong><br>
+          <span style="font-size:0.72rem;color:var(--text-muted);">Las versiones específicas de:</span>
+          <ul style="font-size:0.72rem;color:var(--text-muted);line-height:1.6;list-style:none;padding:0;margin-top:4px;">
+            <li style="padding:2px 0;">• Lenguajes de programación (Python, Java, etc.)</li>
+            <li style="padding:2px 0;">• Bases de datos y librerías</li>
+            <li style="padding:2px 0;">• Sistema operativo subyacente</li>
+          </ul>
+        </div>
+        <p style="font-size:0.75rem;color:var(--text-muted);line-height:1.5;">Se pierde tiempo valioso configurando y depurando entornos, en lugar de desarrollar nuevas funcionalidades.</p>
+      </div>
+      <div style="flex:1;">
+        <strong style="font-size:0.8rem;display:block;margin-bottom:10px;">Entornos Inconsistentes</strong>
+        <div style="display:flex;flex-direction:column;gap:8px;">
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;border:1px solid #E2E8F0;background:var(--bg);border-left:3px solid #10B981;">
+            <span style="font-size:0.9rem;">✓</span>
+            <span style="font-size:0.72rem;font-weight:600;min-width:80px;">Desarrollo</span>
+            <span style="font-size:0.68rem;color:var(--text-muted);">Python 3.9 · Ubuntu 20.04</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;border:1px solid #E2E8F0;background:var(--bg);border-left:3px solid #F59E0B;">
+            <span style="font-size:0.9rem;">⚠</span>
+            <span style="font-size:0.72rem;font-weight:600;min-width:80px;">Pruebas</span>
+            <span style="font-size:0.68rem;color:var(--text-muted);">Python 3.8 · Ubuntu 18.04</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;padding:10px 14px;border-radius:8px;border:1px solid #E2E8F0;background:var(--bg);border-left:3px solid #EF4444;">
+            <span style="font-size:0.9rem;">✗</span>
+            <span style="font-size:0.72rem;font-weight:600;min-width:80px;">Producción</span>
+            <span style="font-size:0.68rem;color:var(--text-muted);">Python 3.7 · Ubuntu 16.04</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="display:flex;align-items:center;gap:12px;padding:14px 18px;border-left:3px solid #10B981;background:rgba(16,185,129,0.06);border-radius:0 10px 10px 0;" class="entry-up d4">
+      <span style="font-size:0.75rem;line-height:1.5;color:var(--text-muted);">
+        <strong>La Solución: Docker</strong> — Docker emerge como una solución fundamental para mitigar este caos y garantizar la consistencia en todos los ciclos de vida del desarrollo.
+        <br><strong style="color:#10B981;font-family:var(--font-display);">Contenerización = Consistencia + Portabilidad</strong>
+      </span>
+    </div>
     <div class="machines">
       <div class="machine works entry-up d3">
         <div class="machine-icon">
@@ -484,6 +612,27 @@
         </div>
       </div>
     </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;" class="entry-up d4">
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:14px 18px;border-radius:10px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.12);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+        <div>
+          <strong style="font-size:0.8rem;">Concepto de Imagen</strong>
+          <p style="font-size:0.72rem;color:var(--text-muted);line-height:1.5;margin-top:4px;">Es la plantilla estática e inmutable de un contenedor. Piensa en ella como la "receta" que define todo lo necesario para que tu aplicación funcione.</p>
+        </div>
+      </div>
+      <div style="display:flex;align-items:flex-start;gap:12px;padding:14px 18px;border-radius:10px;background:rgba(252,211,77,0.08);border:1px solid rgba(252,211,77,0.15);">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:20px;height:20px;flex-shrink:0;"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/></svg>
+        <div>
+          <strong style="font-size:0.8rem;">Concepto de Contenedor</strong>
+          <p style="font-size:0.72rem;color:var(--text-muted);line-height:1.5;margin-top:4px;">Es una instancia ejecutable de una Imagen. Es el proceso aislado que ejecuta tu aplicación. Los contenedores son ligeros, se inician rápidamente y comparten el kernel del sistema.</p>
+        </div>
+      </div>
+    </div>
+    <div class="entry-up d5" style="display:flex;flex-direction:column;gap:6px;margin-top:20px;padding:14px 18px;background:rgba(16,185,129,0.04);border-radius:8px;border:1px solid rgba(16,185,129,0.1);">
+      <span style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:var(--text-muted);"><svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="20 6 9 17 4 12"/></svg> Elimina el problema del "funciona en mi máquina"</span>
+      <span style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:var(--text-muted);"><svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="20 6 9 17 4 12"/></svg> Proporciona entornos consistentes para desarrollo y producción</span>
+      <span style="display:flex;align-items:center;gap:8px;font-size:0.75rem;color:var(--text-muted);"><svg viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><polyline points="20 6 9 17 4 12"/></svg> Facilita la portabilidad de aplicaciones entre sistemas</span>
+    </div>
   </div>
 </section>
 
@@ -520,31 +669,33 @@
     <p class="mt-16 entry-up d3" style="font-size:0.9rem;color:rgba(255,255,255,0.5);">La receta para construir una imagen Docker.</p>
     <div class="dockerfile-viz">
       <div class="dockerfile-code entry-up d3">
-        <div class="line"><span class="num">1</span><span class="instruction">FROM</span><span class="arg"> python:3.11-slim</span></div>
+        <div class="line"><span class="num">1</span><span class="instruction">FROM</span><span class="arg"> python:3.9-slim</span></div>
         <div class="line"><span class="num">2</span><span class="instruction">WORKDIR</span><span class="arg"> /app</span></div>
-        <div class="line"><span class="num">3</span><span class="instruction">COPY</span><span class="arg"> requirements.txt .</span></div>
-        <div class="line"><span class="num">4</span><span class="instruction">RUN</span><span class="arg"> pip install -r requirements.txt</span></div>
-        <div class="line"><span class="num">5</span><span class="instruction">COPY</span><span class="arg"> . .</span></div>
-        <div class="line"><span class="num">6</span><span class="instruction">CMD</span><span class="arg"> ["python", "app.py"]</span></div>
+        <div class="line"><span class="num">3</span><span class="instruction">COPY</span><span class="arg"> app.py .</span></div>
+        <div class="line"><span class="num">4</span><span class="instruction">CMD</span><span class="arg"> ["python", "app.py"]</span></div>
       </div>
       <div class="dockerfile-explain">
         <div class="explain-item entry-up d4">
           <span class="step-num">1</span>
-          <span class="exp-text"><strong>FROM</strong> — Imagen base (Python 3.11)</span>
+          <span class="exp-text"><strong>FROM</strong> — Define la imagen base (un ambiente Python ligero)</span>
         </div>
         <div class="explain-item entry-up d5">
           <span class="step-num">2</span>
-          <span class="exp-text"><strong>WORKDIR</strong> — Directorio de trabajo (/app)</span>
+          <span class="exp-text"><strong>WORKDIR</strong> — Establece el directorio de trabajo dentro del contenedor</span>
         </div>
         <div class="explain-item entry-up d6">
           <span class="step-num">3</span>
-          <span class="exp-text"><strong>COPY</strong> — Copia archivos al contenedor</span>
+          <span class="exp-text"><strong>COPY</strong> — Copia el archivo de tu aplicación al directorio de trabajo</span>
         </div>
         <div class="explain-item entry-up d7">
           <span class="step-num">4</span>
-          <span class="exp-text"><strong>CMD</strong> — Comando al iniciar el contenedor</span>
+          <span class="exp-text"><strong>CMD</strong> — Define el comando que se ejecutará al iniciar el contenedor</span>
         </div>
       </div>
+    </div>
+    <div class="entry-up d5" style="display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:rgba(36,150,237,0.08);border:1px solid rgba(36,150,237,0.15);border-radius:8px;font-size:0.75rem;color:rgba(255,255,255,0.7);line-height:1.5;margin-top:20px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2496ED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>
+      <span>Estas pocas líneas garantizan que cualquier persona en el equipo, o cualquier servidor, podrá ejecutar la aplicación sin preocuparse por instalar Python 3.9 o configurar el entorno.</span>
     </div>
   </div>
 </section>
@@ -555,6 +706,24 @@
     <span class="slide-number d1">17</span>
     <span class="slide-label entry-up d1">En Vivo</span>
     <h2 class="entry-up d2">Demo Docker</h2>
+    <div style="display:flex;gap:16px;margin-bottom:20px;" class="entry-up d3">
+      <div style="display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.1);font-size:0.75rem;color:var(--text-muted);">
+        <span style="width:22px;height:22px;border-radius:50%;background:#10B981;color:white;font-size:0.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">1</span>
+        Crear código + Dockerfile
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.1);font-size:0.75rem;color:var(--text-muted);">
+        <span style="width:22px;height:22px;border-radius:50%;background:#10B981;color:white;font-size:0.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">2</span>
+        docker build
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;padding:8px 14px;border-radius:8px;background:rgba(16,185,129,0.06);border:1px solid rgba(16,185,129,0.1);font-size:0.75rem;color:var(--text-muted);">
+        <span style="width:22px;height:22px;border-radius:50%;background:#10B981;color:white;font-size:0.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">3</span>
+        docker run
+      </div>
+    </div>
+    <div class="entry-up d4" style="display:flex;align-items:flex-start;gap:10px;padding:12px 16px;background:rgba(36,150,237,0.08);border:1px solid rgba(36,150,237,0.12);border-radius:8px;font-size:0.75rem;color:var(--text-muted);line-height:1.5;margin-bottom:20px;">
+      <svg viewBox="0 0 24 24" fill="none" stroke="#2496ED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;margin-top:2px;"><path d="M9 18l6-6-6-6"/></svg>
+      <span>Docker es el vehículo de entrega de tu software. Nos da entornos consistentes para desarrollo, pruebas y producción.</span>
+    </div>
     <div class="terminal-window entry-up d3">
       <div class="terminal-header">
         <span class="dot"></span>
@@ -562,26 +731,15 @@
         <span class="dot"></span>
       </div>
       <div class="terminal-body">
-        <div class="cmd-line">
-          <span class="prompt">$</span>
-          <span class="cmd" style="color:#E2E8F0;">docker build -t hola-python .</span>
-          <span class="output" style="color:var(--text-light);"> → Built successfully</span>
-        </div>
-        <div class="cmd-line">
-          <span class="prompt">$</span>
-          <span class="cmd" style="color:#E2E8F0;">docker images</span>
-          <span class="output" style="color:var(--text-light);"> → hola-python  latest  3a4b5c6d7e8f</span>
-        </div>
-        <div class="cmd-line">
-          <span class="prompt">$</span>
-          <span class="cmd" style="color:#E2E8F0;">docker run --name hola-contenedor hola-python</span>
-          <span class="output" style="color:var(--text-light);"> → ¡Hola desde Docker!</span>
-        </div>
-        <div class="cmd-line">
-          <span class="prompt">$</span>
-          <span class="cmd" style="color:#E2E8F0;">docker ps -a</span>
-          <span class="output" style="color:var(--text-light);"> → hola-contenedor  Exited (0)</span>
-        </div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">echo 'print("Hola, soy un contenedor Docker!")' > app.py</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">cat > Dockerfile << EOF</span></div>
+        <div class="cmd-line" style="padding-left:20px;"><span class="cmd" style="color:#38BDF8;">FROM python:3.9-slim</span></div>
+        <div class="cmd-line" style="padding-left:20px;"><span class="cmd" style="color:#38BDF8;">WORKDIR /app</span></div>
+        <div class="cmd-line" style="padding-left:20px;"><span class="cmd" style="color:#38BDF8;">COPY app.py .</span></div>
+        <div class="cmd-line" style="padding-left:20px;"><span class="cmd" style="color:#38BDF8;">CMD ["python", "app.py"]</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">EOF</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">docker build -t mi-saludo .</span><span class="output" style="color:var(--text-light);"> → Successfully built mi-saludo</span></div>
+        <div class="cmd-line"><span class="prompt">$</span><span class="cmd">docker run mi-saludo</span><span class="output" style="color:var(--text-light);"> → Hola, soy un contenedor Docker!</span></div>
       </div>
     </div>
   </div>
@@ -655,40 +813,40 @@
     <!-- TAB: GIT -->
     <div class="tab-content active" id="tab-git">
       <div class="cmd-grid">
-        <div class="cmd-block entry-up d3"><span class="cmd-text">git init</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d3"><span class="cmd-text">git status</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d4"><span class="cmd-text">git status -s</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d4"><span class="cmd-text">git add .</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d5"><span class="cmd-text">git commit -m "feat: hola mundo inicial"</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d5"><span class="cmd-text">git log --oneline</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d6"><span class="cmd-text">git branch</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d6"><span class="cmd-text">git checkout -b feature-login</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d7"><span class="cmd-text">git push -u origin feature-login</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d7"><span class="cmd-text">git fetch</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d8"><span class="cmd-text">git pull</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d8"><span class="cmd-text">git revert HEAD</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d3"><div><span class="cmd-text">git init</span><span class="cmd-desc">Inicializa un repositorio Git vacío</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d3"><div><span class="cmd-text">git status</span><span class="cmd-desc">Muestra el estado actual del repositorio</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d4"><div><span class="cmd-text">git status -s</span><span class="cmd-desc">Versión corta del estado</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d4"><div><span class="cmd-text">git add .</span><span class="cmd-desc">Agrega todos los cambios al área de staging</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d5"><div><span class="cmd-text">git commit -m "feat: hola mundo inicial"</span><span class="cmd-desc">Guarda los cambios con un mensaje descriptivo</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d5"><div><span class="cmd-text">git log --oneline</span><span class="cmd-desc">Historial resumido de commits</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d6"><div><span class="cmd-text">git branch</span><span class="cmd-desc">Lista las ramas del repositorio</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d6"><div><span class="cmd-text">git checkout -b feature-login</span><span class="cmd-desc">Crea y cambia a una nueva rama</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d7"><div><span class="cmd-text">git push -u origin feature-login</span><span class="cmd-desc">Sube la rama al repositorio remoto</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d7"><div><span class="cmd-text">git fetch</span><span class="cmd-desc">Descarga cambios del remoto sin fusionar</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d8"><div><span class="cmd-text">git pull</span><span class="cmd-desc">Descarga y fusiona cambios del remoto</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d8"><div><span class="cmd-text">git revert HEAD</span><span class="cmd-desc">Revierte el último commit manteniendo el historial</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
       </div>
     </div>
 
     <!-- TAB: GITHUB -->
     <div class="tab-content" id="tab-github">
       <div class="cmd-grid">
-        <div class="cmd-block entry-up d3"><span class="cmd-text">git remote add origin URL_DEL_REPOSITORIO</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d3"><span class="cmd-text">git remote -v</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d4"><span class="cmd-text">git push -u origin main</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d4"><span class="cmd-text">git clone URL_DEL_REPOSITORIO</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d3"><div><span class="cmd-text">git remote add origin URL_DEL_REPOSITORIO</span><span class="cmd-desc">Conecta tu repositorio local con GitHub</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d3"><div><span class="cmd-text">git remote -v</span><span class="cmd-desc">Verifica las conexiones remotas configuradas</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d4"><div><span class="cmd-text">git push -u origin main</span><span class="cmd-desc">Sube tu rama principal a GitHub</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d4"><div><span class="cmd-text">git clone URL_DEL_REPOSITORIO</span><span class="cmd-desc">Copia un repositorio remoto a tu máquina</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
       </div>
     </div>
 
     <!-- TAB: DOCKER -->
     <div class="tab-content" id="tab-docker">
       <div class="cmd-grid">
-        <div class="cmd-block entry-up d3"><span class="cmd-text">docker build -t hola-python .</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d3"><span class="cmd-text">docker images</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d4"><span class="cmd-text">docker run --name hola-contenedor hola-python</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d4"><span class="cmd-text">docker ps -a</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d5"><span class="cmd-text">docker logs hola-contenedor</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
-        <div class="cmd-block entry-up d5"><span class="cmd-text">docker rm hola-contenedor</span><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d3"><div><span class="cmd-text">docker build -t hola-python .</span><span class="cmd-desc">Construye una imagen desde un Dockerfile</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d3"><div><span class="cmd-text">docker images</span><span class="cmd-desc">Lista las imágenes disponibles</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d4"><div><span class="cmd-text">docker run --name hola-contenedor hola-python</span><span class="cmd-desc">Ejecuta un contenedor desde una imagen</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d4"><div><span class="cmd-text">docker ps -a</span><span class="cmd-desc">Lista todos los contenedores (activos y detenidos)</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d5"><div><span class="cmd-text">docker logs hola-contenedor</span><span class="cmd-desc">Muestra los logs de un contenedor</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
+        <div class="cmd-block entry-up d5"><div><span class="cmd-text">docker rm hola-contenedor</span><span class="cmd-desc">Elimina un contenedor detenido</span></div><button class="copy-btn" aria-label="Copiar"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg></button></div>
       </div>
     </div>
   </div>
@@ -700,22 +858,44 @@
     <span class="slide-number d1" style="color:rgba(255,255,255,0.3);">20</span>
     <span class="slide-label entry-up d1" style="color:rgba(255,255,255,0.3);">Fin</span>
     <h2 class="entry-up d2">Preguntas y Contacto</h2>
-    <div class="contact-card entry-up d3">
-      <div class="name">Carlos Canto</div>
-      <div class="role-text">Desarrollador · Instructor</div>
-      <div class="contact-links">
-        <a href="#" aria-label="Correo">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Correo
-        </a>
-        <a href="#" aria-label="GitHub">
-          <img src="assets/logos/github.svg" alt="GitHub" style="width:16px;height:16px;">
-          GitHub
-        </a>
-        <a href="#" aria-label="Instagram">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17" cy="7" r="1" fill="currentColor"/></svg>
-          Instagram
-        </a>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:32px;" class="entry-up d3">
+      <div style="padding:24px;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+        <h3 style="font-size:1rem;margin-bottom:16px;color:white;">Siguientes Pasos</h3>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.8rem;color:rgba(255,255,255,0.6);">
+            <span style="width:24px;height:24px;border-radius:50%;background:#10B981;color:white;font-size:0.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">1</span>
+            Abre una cuenta en GitHub
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.8rem;color:rgba(255,255,255,0.6);">
+            <span style="width:24px;height:24px;border-radius:50%;background:#10B981;color:white;font-size:0.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">2</span>
+            Haz tu primer <code style="font-family:'Courier New',monospace;color:white;">git commit</code> a un proyecto personal
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.8rem;color:rgba(255,255,255,0.6);">
+            <span style="width:24px;height:24px;border-radius:50%;background:#10B981;color:white;font-size:0.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">3</span>
+            Descarga Docker Desktop
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;font-size:0.8rem;color:rgba(255,255,255,0.6);">
+            <span style="width:24px;height:24px;border-radius:50%;background:#10B981;color:white;font-size:0.65rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;">4</span>
+            Ejecuta un contenedor de una base de datos simple
+          </div>
+        </div>
+      </div>
+      <div style="padding:24px;border-radius:16px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+        <h3 style="font-size:1rem;margin-bottom:16px;color:white;">Contacto</h3>
+        <div style="display:flex;flex-direction:column;gap:12px;">
+          <div style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#2496ED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span style="font-size:0.8rem;color:rgba(255,255,255,0.7);">carlos.canto-c@up.ac.pa</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+            <img src="assets/logos/github.svg" alt="GitHub" style="width:16px;height:16px;">
+            <span style="font-size:0.8rem;color:rgba(255,255,255,0.7);">github.com/carlcanto</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;padding:10px 14px;border-radius:8px;background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#E1306C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;flex-shrink:0;"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17" cy="7" r="1" fill="#E1306C"/></svg>
+            <span style="font-size:0.8rem;color:rgba(255,255,255,0.7);">instagram.com/carlcanto</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
